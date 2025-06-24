@@ -90,7 +90,7 @@ def lrc_converter(
     # 添加开头的ID标签
     lrc_text = (
         "\n".join(f"[{k}:{v}]" for k, v in tags.items() if k in ("al", "ar", "au", "by", "offset", "ti") and v)
-        + f"\n[tool:LDDC {__version__} https://github.com/chenmozhijin/LDDC]\n\n"
+        + f"\n\n"
         if tags
         else ""
     )
